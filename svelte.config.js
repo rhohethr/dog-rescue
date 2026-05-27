@@ -6,6 +6,9 @@ const config = {
 		runes: ({ filename }) => (filename.split(/[/\\]/).includes('node_modules') ? undefined : true)
 	},
 	kit: {
+		paths: {
+			base: '/dog-rescue'
+		},
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
