@@ -16,6 +16,7 @@ export type Expense = {
 export type DailyUpdate = {
   date: string;
   images: string[];
+  videos?: string[];
   note: string;
 };
 

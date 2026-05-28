@@ -16,11 +16,12 @@ export type Expense = {
 export type DailyUpdate = {
   date: string;
   images: string[];
+  videos?: string[];
   note: string;
 };
 
 const API_URL =
-  'https://script.google.com/macros/s/AKfycbyNkwlBFe6r7Rxw1C9vVKgT1V-9nr6GRnthZ_ZGd1g6CEJO02kOECfKTDpog669J-jWuw/exec';
+  'https://script.google.com/macros/s/AKfycbxnDVkLpfGOlnV87O-QrugnA8RX508jPlBOebzY91FvCBLNxARe1pjNRI_WwOkweTpYRA/exec';
 
 let _cached: { donations: Donation[]; expenses: Expense[]; updates: DailyUpdate[] } | null = null;
 let _loading = false;

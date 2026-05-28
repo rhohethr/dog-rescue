@@ -72,6 +72,14 @@
           {/each}
         </div>
       {/if}
+
+      {#if update.videos && update.videos.length > 0}
+        <div class="video-grid">
+          {#each update.videos as vid}
+            <video controls preload="none" class="update-video" src={vid}></video>
+          {/each}
+        </div>
+      {/if}
     </section>
   {/each}
 {/if}
@@ -146,6 +154,19 @@
   .update-image:hover {
     transform: scale(1.02);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .update-video {
+    width: 100%;
+    border-radius: 8px;
+    background: #000;
   }
 
   .modal-overlay {
