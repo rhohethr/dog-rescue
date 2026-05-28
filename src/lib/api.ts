@@ -21,7 +21,7 @@ export type DailyUpdate = {
 };
 
 const API_URL =
-  'https://script.google.com/macros/s/AKfycbxnDVkLpfGOlnV87O-QrugnA8RX508jPlBOebzY91FvCBLNxARe1pjNRI_WwOkweTpYRA/exec';
+  'https://script.google.com/macros/s/AKfycbxGuHqAWCTO0wbghx5C2Em3hkiJEBCdgBGcnORx5R9BgtvaG32C1bBZR4OVZICGmvFGQw/exec';
 
 let _cached: { donations: Donation[]; expenses: Expense[]; updates: DailyUpdate[] } | null = null;
 let _loading = false;
