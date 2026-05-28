@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { LayoutData } from './$types';
+  import { base } from '$app/paths';
   let { data, children } = $props<LayoutData>();
 </script>
 
@@ -12,10 +13,10 @@
   <header>
     <h1>Kapil's Rescue Tracker</h1>
     <nav>
-      <a href="/" class={data.page === 'home' ? 'active' : ''}>Home</a>
-      <a href="/donations" class={data.page === 'donations' ? 'active' : ''}>Donations</a>
-      <a href="/expenses" class={data.page === 'expenses' ? 'active' : ''}>Expenses</a>
-      <a href="/updates" class={data.page === 'updates' ? 'active' : ''}>Updates</a>
+      <a href="{base}/" class={data.page === 'home' ? 'active' : ''}>Home</a>
+      <a href="{base}/donations" class={data.page === 'donations' ? 'active' : ''}>Donations</a>
+      <a href="{base}/expenses" class={data.page === 'expenses' ? 'active' : ''}>Expenses</a>
+      <a href="{base}/updates" class={data.page === 'updates' ? 'active' : ''}>Updates</a>
     </nav>
   </header>
   <main>

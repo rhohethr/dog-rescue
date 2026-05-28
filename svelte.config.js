@@ -6,16 +6,16 @@ const config = {
 		runes: ({ filename }) => (filename.split(/[/\\]/).includes('node_modules') ? undefined : true)
 	},
 	kit: {
-		paths: {
-			base: '/dog-rescue'
-		},
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
 			fallback: '404.html',
 			precompress: false,
 			strict: true
-		})
+		}),
+		paths: {
+			base: '/kapil-rescue-tracker'
+		}
 	}
 };
 

@@ -1,9 +1,10 @@
 <script lang="ts">
+  import { base } from '$app/paths';
   const FULL_GLORY_URLS = [
-    '/img1.jpg',
-    '/img2.jpg',
-    '/img3.jpg',
-    '/img4.jpg',
+    `${base}/img1.jpg`,
+    `${base}/img2.jpg`,
+    `${base}/img3.jpg`,
+    `${base}/img4.jpg`,
   ];
 
   let currentIndex = $state(0);
